@@ -15,13 +15,13 @@ $ yarn add date-in-utc
 ```js
 const dateInUtc = require('date-in-utc');
 
-dateInUtc('+0', new Date('2018-4-25 18:30')).toLocaleString();
+dateInUtc(0, new Date('2018-4-25 18:30')).toLocaleString();
 //=> '2018-4-25 12:30:00'
 
-dateInUtc('+5.5', new Date('2018-4-25 18:30')).toLocaleString();
+dateInUtc(5.5, new Date('2018-4-25 18:30')).toLocaleString();
 //=> '2018-4-25 18:00:00'
 
-dateInUtc('-12', new Date('2018-4-25 18:30')).toLocaleString();
+dateInUtc(-12, new Date('2018-4-25 18:30')).toLocaleString();
 //=> '2018-4-25 00:30:00'
 ```
 
